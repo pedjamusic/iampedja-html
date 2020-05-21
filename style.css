@@ -1,0 +1,99 @@
+/* I Am Pedja Splash */
+
+/* @font-face {
+	font-family: 'Montserrat';
+	src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+} */
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext'); */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,800&subset=latin-ext');
+
+html {
+	border-top: #08c solid 8px;
+}
+
+body {
+	font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+	font-size: 16px;
+	background-color: #f5f5f7;
+}
+
+a {
+	color: #08c;
+}
+a:hover {
+	color: #1f1f27;
+}
+.row {
+	margin-bottom: 45px;
+}
+
+/*.zdravo {
+animation-duration: 3s;
+animation-delay: 1s;
+background: linear-gradient(#08c), white);
+}*/
+
+.blue-button:hover {
+	cursor: not-allowed;
+}
+.blue-button a {
+	display: inline-block;
+	width: 235px;
+	height: 53px;
+	line-height: 53px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 0 1px 1px #000;
+	background: url('images/hireme.png') no-repeat;
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	padding: 0;
+}
+.blue-button a:hover {
+	color: #ccc;
+}
+
+a.btn.disabled, fieldset[disabled] a.btn {
+	pointer-events: auto;
+}
+
+/* --- ^^^ GLOBALS ^^^ --- */
+
+.logo {
+	margin-top: 20px;
+}
+
+.jumbotron {
+	border-bottom: 1px solid #fff;
+}
+#AlbumCover a img {
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.75);
+			box-shadow: 0 2px 3px rgba(0,0,0,.75);
+}
+figcaption {
+	font-weight: 300;
+}
+
+a.facebook {
+	color: #3b5998;
+}
+a.twitter {
+	color: #00acee;
+}
+a.soundcloud {
+	color: #f70;
+}
+a.spotify {
+	color: #1db954;
+}
+a.apple {
+	color: #000;
+}
+a.apple:hover {
+	background: -webkit-linear-gradient(rgba(98,187,71,1) 0%, rgba(252,184,39,1) 20%, rgba(249,155,35,1) 40%, rgba(224,58,60,1) 60%, rgba(187,60,106,1) 80%, rgba(0,157,220,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

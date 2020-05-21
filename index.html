@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en" xml:lang="en">
+<head>
+	<meta charset="utf-8" />
+
+	<!-- USING LATEST RENDERING MODE FOR IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>Predrag Drlja&ccaron;a - crafts for new media</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+	<link rel="manifest" href="favicon/site.webmanifest" />
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#0088cc" />
+	<meta name="msapplication-TileColor" content="#0088cc" />
+	<meta name="theme-color" content="#0088cc" />
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/> -->
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+	<header>
+		Navigation
+	</header>
+	<main class="container" id="content">
+		<article role="main">
+			<div class="row">
+				<header class="col-xs-12 text-center">
+					<a href="/"><img class="logo img-responsive center-block" src="images/logo.png" alt="Responsive logo"/></a>
+					<hgroup>
+						<h1>Predrag Drljaca</h1>
+						<h2>crafts for new media</h2>
+					</hgroup>
+				</header>
+			</div>
+			<section class="row jumbotron">
+				<div class="col-sm-4 col-sm-offset-1">
+					<figure id="AlbumCover">
+						<a href="http://store.cdbaby.com/Artist/PredragDrljaca1" title="Go to My CD Baby profile"><img src="images/AlbumCover.jpg" alt="Album cover" class="img-responsive img-rounded" /></a>
+						<figcaption class="small pull-right hidden-xs" for="AlbumCover">Album Cover: 1982</figcaption>
+					</figure>
+				</div>
+				<div class="col-sm-6">
+					<h3>On Album and The Dream.</h3>
+					<p class="lead">It has been so long since this has been cooking. What started as an experiment, a long time ago, finally got its form and focus.</p>
+					<p>Product of love and enthusiasm has been made available on <a href="https://www.cdbaby.com/">CD Baby</a>.</p>
+				</div>
+			</section>
+			<article class="row">
+				<section class="col-sm-4 about">
+					<h3>About.</h3>
+					<p>Hello! My name is <strong>Predrag Drljaca</strong> and I'm <strong>web</strong> and <strong>entertainment</strong> enthusiast based in Sombor, Serbia.</p>
+				</section>
+				<section class="col-sm-4 goal">
+					<h3>Goal.</h3>
+					<p>I like to design beautyful &amp; unique websites and user interfaces using accessibility and usability guidelines for rich user experience.</p>
+				</section>
+				<section class="col-sm-4 availability">
+					<h3>Availability.</h3>
+					<p>Sadly, I'm <strong>unavailable</strong> for contract work, at the moment.</p>
+					<p class="blue-button hidden-xs"><a href="#hireme" id="hireme"><del>Hire me</del></a></p>
+					<!-- Sad Emoji -->
+					<p class="visible-xs-inline-block">&colon;&lpar;</p>
+				</section>
+			</article><!-- about row -->
+
+			<footer class="row">
+				<section class="text-center">
+					<h4>Meanwhile, elsewhere.</h4>
+					<ul id="elsewhere" class="list-inline">
+						<li class="list-inline-item"><a class="facebook" href="https://www.facebook.com/iampedja/" title="Go to I Am Pedja on Facebook" aria-label="Facebook"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i><span class="sr-only">Facebook</span></a></li>
+						<li class="list-inline-item"><a class="twitter" href="https://twitter.com/webpedja" title="Go to I Am Pedja on Twitter" aria-label="Twitter"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i><span class="sr-only">Twitter</span></a></li>
+						<li class="list-inline-item"><a class="soundcloud" href="https://soundcloud.com/pedjamusic" title="Go to My Sondcloud page" aria-label="Soundcloud"><i class="fa fa-soundcloud fa-2x" aria-hidden="true"></i><span class="sr-only">Soundcloud</span></a></li>
+						<li class="list-inline-item"><a class="spotify" href="https://open.spotify.com/artist/0tckTD8qWbw3BqCdOpI4eI?si=lA7GzOlgRlGKM4PCDXjalg" title="Check my music on Spotify" aria-label="Spotify"><i class="fa fa-spotify fa-2x" aria-hidden="true"></i><span class="sr-only">Spotify</span></a></li>
+						<li class="list-inline-item"><a class="apple" href="https://music.apple.com/us/artist/predrag-drljaca/1437045064" title="Check my music on Apple Music" aria-label="Apple Music"><i class="fa fa-apple fa-2x" aria-hidden="true"></i><span class="sr-only">Apple Music</span></a></li>
+					</ul>
+				</section>
+			</footer>
+		</article>
+	</main><!-- Main container -->
+
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script>
+	function animationClick(element, animation){
+		element = $(element);
+		element.click(
+			function() {
+				element.addClass('animated ' + animation);
+				//wait for animation to finish before removing classes
+				window.setTimeout( function(){
+					element.removeClass('animated ' + animation);
+				}, 2000);
+			});
+		}
+		$(document).ready(function(){
+			$('#hireme').each(function() {
+				animationClick(this, 'shake');
+			});
+		});
+		</script>
+
+</body>
+</html>
