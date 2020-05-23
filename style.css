@@ -97,3 +97,12 @@ a.apple:hover {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+a.pandora {
+	background: url("images/pandora.png") center bottom no-repeat;
+	width: 27px;
+	height: 28px;
+	display: block;
+}
+a.instagram {
+	color: #8a3ab9;
+}
