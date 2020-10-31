@@ -4,7 +4,6 @@
 	font-family: 'Montserrat';
 	src: url('fonts/Montserrat-Regular.ttf') format('truetype');
 } */
-/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&subset=latin-ext'); */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,800&subset=latin-ext');
 
 html {
@@ -92,11 +91,11 @@ a.spotify {
 a.apple {
 	color: #000;
 }
-a.apple:hover {
+/* a.apple:hover {
 	background: -webkit-linear-gradient(rgba(98,187,71,1) 0%, rgba(252,184,39,1) 20%, rgba(249,155,35,1) 40%, rgba(224,58,60,1) 60%, rgba(187,60,106,1) 80%, rgba(0,157,220,1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-}
+} */
 a.pandora {
 	background: url("images/pandora.png") center bottom no-repeat;
 	width: 27px;
