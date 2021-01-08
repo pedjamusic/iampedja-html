@@ -71,8 +71,8 @@
 				</section>
 				<section class="col-sm-4 availability">
 					<h3>Availability.</h3>
-					<p>Sadly, I'm <strong>unavailable</strong> for contract work, at the moment.</p>
-					<p class="blue-button d-none d-lg-block animate__animated"><a href="#hireme" id="hireme"><del>Hire me</del></a></p>
+					<p>I'm <strong>available</strong> for contract work, at the moment.</p>
+					<p class="blue-button d-none d-lg-block animate__animated"><a href="#hireme" id="hireme">Comming soon</a></p>
 					<!-- Sad Emoji -->
 					<p class="d-inline-block d-lg-none">&colon;&lpar;</p>
 				</section>
@@ -99,27 +99,26 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 	<script>
 	// HIRE ME button shake animation on click
-	function animationClick(element, animation){
-		element = $(element);
-		element.click(
-			function() {
-				element.addClass('animate__animated ' + animation);
-				//wait for animation to finish before removing classes
-				window.setTimeout( function(){
-					element.removeClass('animate__animated ' + animation);
-				}, 2000);
-			});
-		}
-		$(document).ready(function(){
-			$('#hireme').each(function() {
-				animationClick(this, 'animate__headShake');
-			});
-		});
+	// function animationClick(element, animation){
+	// 	element = $(element);
+	// 	element.click(
+	// 		function() {
+	// 			element.addClass('animate__animated ' + animation);
+	// 			//wait for animation to finish before removing classes
+	// 			window.setTimeout( function(){
+	// 				element.removeClass('animate__animated ' + animation);
+	// 			}, 2000);
+	// 		});
+	// 	}
+	// 	$(document).ready(function(){
+	// 		$('#hireme').each(function() {
+	// 			animationClick(this, 'animate__headShake');
+	// 		});
+	// 	});
 	</script>
+
 	<!-- Buy Me a Coffe code -->
 	<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="iampedja" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 	
-	<!-- Toneden Lasso code -->
-	<!-- <script>!function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//sd.toneden.io/production/lasso.loader.js";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(e,o)}(),window.LassoReady=window.LassoReady||[],window.LassoReady.push(function(){window.Lasso.configure({user_id:43924820})});</script> -->
 </body>
 </html>
